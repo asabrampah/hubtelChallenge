@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.Controller">
+    <top>
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="History" onAction="#handleHistory" />
+            <Button text="Transaction Summary" onAction="#handleSummary" />
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="10">
+            <TextField fx:id="searchBar" promptText="Search" />
+            <ListView fx:id="transactionList" />
+        </VBox>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="CENTER" styleClass="bottom-nav">
+            <Button text="Home" />
+            <Button text="Send" />
+            <Button text="History" />
+            <Button text="Scheduled" />
+        </HBox>
+    </bottom>
+</BorderPane>
